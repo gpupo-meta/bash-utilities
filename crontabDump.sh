@@ -9,7 +9,7 @@ LOG_FILE=$1
 
 for u in `cat /etc/passwd | grep -v "nologin\|bin\/false\|^#\|uucico" | cut -d: -f1`;
 do
-    echo "crontab for $u:" | tee -a  $LOG_FILE;;
-    crontab -l -u $u | tee -a  $LOG_FILE;;
-    echo "----" | tee -a  $LOG_FILE;;
+    echo "crontab for $u:" | tee -a  $LOG_FILE;
+    crontab -l -u $u | tee -a  $LOG_FILE;
+    echo "----" | tee -a  $LOG_FILE;
 done

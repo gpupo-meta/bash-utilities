@@ -43,6 +43,10 @@ Logs and monitoring every 1 minute the load time of a URL
 
 Backup crontab from every user on the server
 
+    sudo $HOME/bash-utilities/crontabDump.sh /var/log/cron
+
+crontab line:
+
     1 6 * * *  sudo $HOME/bash-utilities/crontabDump.sh /var/log/cron
 
 
