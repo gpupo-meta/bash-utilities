@@ -30,11 +30,20 @@ Proibido:
 
     git clone --depth=1 https://github.com/gpupo/bash-utilities.git ~/bash-utilities;
 
+### Update
+
+    cd ~/bash-utilities && git pull;
+
 ## Uso
 
 Logs and monitoring every 1 minute the load time of a URL
 
     ~/bash-utilities/loadTime.sh www.google.com /var/log/loadTime.log
+
+
+Backup crontab from every user on the server
+
+    1 6 * * *  sudo $HOME/bash-utilities/crontabDump.sh /var/log/cron
 
 
 ## License
